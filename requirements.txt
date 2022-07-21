@@ -4,4 +4,4 @@ sklearn==0.0
 tabulate==0.8.10
 PrettyTable==3.3.0
 jsons==1.6.3
-Pillow==2.2.2
+Pillow==9.0.0
