@@ -11,7 +11,7 @@ st.write("""
 # Simple Iris Flower Prediction App
 This app predicts the **Iris flower** type!.
 It looks like the model is predicting correctly because 
-the setosa is shortest and virginica is the longest and versicolor is in between these two !.
+the **setosa** is shortest and **virginica** is the longest and **versicolor** is in between these two !.
 Please try it out !
 """)
 
