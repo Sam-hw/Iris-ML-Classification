@@ -49,57 +49,9 @@ prediction_proba = clf.predict_proba(df)
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-setosa','Iris-versicolor','Iris-virginica'])
 
-value = ['''
-       {
-           "_id": {
-               "$Col1": "XXXXXXX2443"
-           },
-           "col2": false,
-           "col3": "359335050111111",
-           "startedAt": {
-               "$date": 1633309625000
-           },
-           "endedAt": {
-               "$date": 1633310213000
-           },
-           "col4": "YYYYYYYYYYYYYYYYYY",
-           "created_at": {
-               "$date": 1633310846935
-           },
-           "updated_at": {
-               "$date": 1633310846935
-           },
-           "__v": 0
-       }''']
+df = pd.DataFrame(columns='Iris-setosa','Iris-versicolor','Iris-virginica'])
 
-dictionary = json.loads(value[0])
-headers = []
-values = []
-for key in dictionary:
-    head = key
-    value = ""
-    if type(dictionary[key]) == type({}):
-        for key2 in dictionary[key]:
-            head += "/" + key2
-            value = dictionary[key][key2]
-            headers.append(head)
-            values.append(value)
-
-    else:
-        value = dictionary[key]
-        headers.append(head)
-        values.append(value)
-
-st.write(headers)
-st.write(values)
-st.table(values)
-st.table(myTable)
-myTable = PrettyTable(headers)
-myTable.add_row(values)
-print(myTable)
-
-
-
+st.table(df)
 
 st.subheader('Prediction')
 st.write(prediction)
