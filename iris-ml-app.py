@@ -4,9 +4,6 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from tabulate import tabulate
 import pandas as pd
-from PIL import Image
-
-
 
 st.write("""
 # Simple Iris Flower Prediction App
@@ -15,9 +12,6 @@ It looks like the model is predicting correctly because
 the **setosa** is shortest and **virginica** is the longest and **versicolor** is in between these two !.
 Please try it out !
 """)
-
-#image = Image.open('https://github.com/Sam-hw/Iris-Project/blob/main/iris-img.jpg')
-#st.image(image, caption='iRIS')
 
 
 st.sidebar.header('User Input  Parameters')
@@ -38,9 +32,6 @@ df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df)
-
-#iris = datasets.load_iris()
-#X = iris.data
 
 iris = pd.read_csv('https://raw.githubusercontent.com/Sam-hw/Iris-Project/main/IRIS.csv')
 X = iris.drop('species',axis = 1)
