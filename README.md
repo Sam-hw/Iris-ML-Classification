@@ -1,3 +1,3 @@
 # Iris-Project
-This project uses 
-Stremlit, Pandas
+This is a Machine Learning with Scikit-Learn Project 
+Main Python Package -  Stremlit, Pandas
