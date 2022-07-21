@@ -31,9 +31,10 @@ st.write(df)
 
 #iris = datasets.load_iris()
 #X = iris.data
-#Y = iris.target
-pd.read_csv('https://raw.githubusercontent.com/ismailbahrudin/iris-july/main/IRIS.csv')
+
+X = pd.read_csv('https://raw.githubusercontent.com/ismailbahrudin/iris-july/main/IRIS.csv')
 X = iris.drop('species',axis = 1)
+Y = iris.target
 
 clf = RandomForestClassifier()
 clf.fit(X, Y)
@@ -45,7 +46,7 @@ st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
 
 st.subheader('Prediction')
-st.write(iris.target_names[prediction])
+#st.write(iris.target_names[prediction])
 #st.write(prediction)
 
 st.subheader('Prediction Probability')
