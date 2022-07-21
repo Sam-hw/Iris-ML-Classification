@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
-from sklearn import datasets
+# from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
+
+import pandas as pd
 
 st.write("""
 # Simple Iris Flower Prediction App
@@ -27,9 +29,11 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris = datasets.load_iris()
-X = iris.data
-Y = iris.target
+#iris = datasets.load_iris()
+#X = iris.data
+#Y = iris.target
+pd.read_csv('https://raw.githubusercontent.com/ismailbahrudin/iris-july/main/IRIS.csv')
+X = iris.drop('species',axis = 1)
 
 clf = RandomForestClassifier()
 clf.fit(X, Y)
