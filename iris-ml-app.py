@@ -4,6 +4,9 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from tabulate import tabulate
 import pandas as pd
+import json
+from prettytable import PrettyTable
+
 
 st.write("""
 # Simple Iris Flower Prediction App
@@ -45,9 +48,6 @@ prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-setosa','Iris-versicolor','Iris-virginica'])
-
-import json
-from prettytable import PrettyTable
 
 value = ['''
        {
