@@ -7,7 +7,6 @@ import pandas as pd
 import json
 from prettytable import PrettyTable
 from PIL import Image
-
 image = Image.open('https://github.com/Sam-hw/Iris-Project/blob/main/iris-img.jpg')
 st.image(image, caption='iRIS')
 
