@@ -6,9 +6,7 @@ from tabulate import tabulate
 import pandas as pd
 from PIL import Image
 
-[theme]
-font="serif"
-base="light"
+
 
 st.write("""
 # Simple Iris Flower Prediction App
