@@ -91,9 +91,10 @@ for key in dictionary:
         values.append(value)
 
 st.write(headers)
-print(values)
+st.write(values)
+st.table(values)
+st.table(myTable)
 myTable = PrettyTable(headers)
-
 myTable.add_row(values)
 print(myTable)
 
