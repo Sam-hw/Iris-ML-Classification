@@ -34,7 +34,7 @@ def user_input_features():
 
 df = user_input_features()
 
-st.subheader('User Input parameters')
+st.subheader('User ** Input ** parameters')
 st.write(df)
 
 #iris = datasets.load_iris()
@@ -55,8 +55,7 @@ df2 = pd.read_csv('https://raw.githubusercontent.com/Sam-hw/Iris-Project/main/ir
 st.table(df2)
 
 st.subheader('Prediction')
-#st.write(prediction)
-st.metric(prediction,2)
+st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
