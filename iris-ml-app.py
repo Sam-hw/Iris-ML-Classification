@@ -90,7 +90,7 @@ for key in dictionary:
         headers.append(head)
         values.append(value)
 
-print(headers)
+st.write(headers)
 print(values)
 myTable = PrettyTable(headers)
 
