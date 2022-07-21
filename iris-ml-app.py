@@ -32,7 +32,7 @@ st.write(df)
 #iris = datasets.load_iris()
 #X = iris.data
 
-iris = pd.read_csv('https://raw.githubusercontent.com/ismailbahrudin/iris-july/main/IRIS.csv')
+iris = pd.read_csv('https://github.com/Sam-hw/Iris-Project/blob/main/IRIS.csv')
 X = iris.drop('species',axis = 1)
 Y = iris['species']
 
