@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 # from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
-
+from tabulate import tabulate
 import pandas as pd
 
 st.write("""
