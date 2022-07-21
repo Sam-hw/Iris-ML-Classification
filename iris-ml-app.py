@@ -47,6 +47,8 @@ st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
 
 st.subheader('Prediction')
+st.write(['Iris-setosa','Iris-versicolor','Iris-virginica'])
+
 #st.write(iris.target_names[prediction])
 #st.write(prediction)
 
