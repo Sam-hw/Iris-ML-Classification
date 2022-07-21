@@ -43,8 +43,6 @@ st.write(df)
 iris = pd.read_csv('https://raw.githubusercontent.com/Sam-hw/Iris-Project/main/IRIS.csv')
 X = iris.drop('species',axis = 1)
 Y = iris['species']
-
-
 clf = RandomForestClassifier()
 clf.fit(X, Y)
 
@@ -57,7 +55,8 @@ df2 = pd.read_csv('https://raw.githubusercontent.com/Sam-hw/Iris-Project/main/ir
 st.table(df2)
 
 st.subheader('Prediction')
-st.write(prediction)
+#st.write(prediction)
+st.metric(prediction,2)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
